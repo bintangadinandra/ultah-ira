@@ -18,6 +18,7 @@ h1 {
 h1.giant {
   font-size: 10rem;
   margin: 0px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
@@ -39,6 +40,10 @@ a {
 
 .cake-candle-light {
   position: relative;
+}
+
+.quotes p {
+  margin: 1rem 0 2rem;
 }
 
 .cake-candle-light::before {
@@ -68,4 +73,80 @@ a {
   100% {
     opacity: .5;
   }
+}
+
+.bintang {
+  border: 1px solid red;
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  text-align: center;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.bintang>* {
+  margin: auto;
+}
+
+.bintang-head {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: -1rem;
+  position: relative;
+  z-index: 1;
+  background: #f1c27d;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.bintang-body {
+  width: 11rem;
+  height: 10rem;
+  background: #003366;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.bintang-legs {
+  width: 8.5rem;
+  height: 8rem;
+  background: black;
+}
+
+.ira {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+
+.ira>* {
+  margin: auto;
+}
+
+.ira-head {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: -1rem;
+  position: relative;
+  z-index: 1;
+  background: #f1c27d;
+  border-radius: 9999px;
+}
+
+.ira-body {
+  width: 8rem;
+  height: 10rem;
+  background: #F984E5;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.ira-legs {
+  width: 6.5rem;
+  height: 8rem;
+  background: black;
 }

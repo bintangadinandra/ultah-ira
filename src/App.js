@@ -13,6 +13,7 @@ import {
 import BirthdayCake from "./components/BirthdayCake";
 import Clouds from "./components/Clouds";
 import FlowerPot from "./components/FlowerPot";
+import Pencil from "./components/Pencil";
 
 class App extends Component {
   render() {
@@ -42,11 +43,23 @@ class App extends Component {
           alignItems="center"
           notPadded
         >
-          <div style={{ padding: "1rem", marginBottom: "2rem" }}>
+          <div
+            style={{
+              transform: "scale(1.2) rotate(135deg)",
+              position: "absolute",
+              bottom: "8rem",
+              left: "-70px"
+            }}
+          >
+            <Pencil />
+          </div>
+          <div style={{ padding: "1rem", paddingBottom: "10rem" }}>
+            <hr />
             <h3>First of all...</h3>
             <h1>I am sorry I cannot be there</h1>
             <h3>Be present at your special day</h3>
             <h3>But that won't stop me saying...</h3>
+            <hr />
           </div>
           <div
             style={{
@@ -70,7 +83,7 @@ class App extends Component {
           <div class="cake-candle-light">
             <BirthdayCake />
           </div>
-          <p>Happy..!</p>
+          <h1>Happy..!</h1>
           <div
             style={{
               display: "flex"
@@ -116,19 +129,39 @@ class App extends Component {
               position: "relative"
             }}
           >
-            <h3>I wish..</h3>
-            <p>You keep living your life to the fullest</p>
-            <p>You keep being a good daughter for your parents</p>
-            <p>You are always on your track to reach your goal...</p>
-            <p>And to reach our goal, forever and always with me,</p>
-            <p>Reaching towards the sky high...</p>
+            <h3>I wish...</h3>
+            <hr />
+            <div class="quotes">
+              <p>You keep living your life to the fullest</p>
+              <p>You keep being a good daughter for your parents</p>
+              <p>You keep your faith, and your praying to Allah</p>
+              <p>You keep on flying on track to reach your goal...</p>
+              <p>Reaching towards the sky high...</p>
+            </div>
           </div>
         </FullPageWrapper>
         <FullPageWrapper
-          style={{ background: `linear-gradient(${SkyBlue}, ${White})` }}
+          style={{
+            background: `linear-gradient(${SkyBlue}, ${White})`,
+            position: "relative"
+          }}
           justifyContent="flex-end"
           notPadded
         >
+          <div class="bintang">
+            <div class="bintang-head" />
+            <div class="bintang-body" />
+            <div class="bintang-right-arm" />
+            <div class="bintang-right-hand" />
+            <div class="bintang-legs" />
+          </div>
+          <div class="ira">
+            <div class="ira-head" />
+            <div class="ira-body" />
+            <div class="ira-left-arm" />
+            <div class="ira-left-hand" />
+            <div class="ira-legs" />
+          </div>
           <div
             style={{
               width: "100%",
