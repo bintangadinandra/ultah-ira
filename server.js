@@ -13,5 +13,5 @@ app.use(express.static(path.resolve(__dirname, ".", "build")));
 
 /* Listener */
 app.listen(PORT, () => {
-  console.log("The server is up ma lord!");
+  console.log("The server is up ma lord!, its on port", PORT);
 });
