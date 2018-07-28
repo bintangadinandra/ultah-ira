@@ -13,10 +13,6 @@
 
 /* ANIMATIONS */
 
-.x1 {
-  animation: animateCloud 5s linear infinite;
-}
-
 /* OBJECTS */
 
 .cloud {

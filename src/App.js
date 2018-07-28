@@ -7,10 +7,12 @@ import {
   SkyBlue,
   White,
   Black,
-  PinkyBoy
+  PinkyBoy,
+  Toska
 } from "./utils/Colors";
 import BirthdayCake from "./components/BirthdayCake";
 import Clouds from "./components/Clouds";
+import FlowerPot from "./components/FlowerPot";
 
 class App extends Component {
   render() {
@@ -24,6 +26,9 @@ class App extends Component {
           justifyContent="center"
           alignItems="center"
         >
+          <div style={{ marginBottom: "1rem" }}>
+            <FlowerPot />
+          </div>
           <h1>Hi There Beautiful!</h1>
           <p>If you're reading this, perhaps you've recieved my flowers :)</p>
         </FullPageWrapper>
@@ -37,7 +42,7 @@ class App extends Component {
           alignItems="center"
           notPadded
         >
-          <div style={{ padding: "1rem" }}>
+          <div style={{ padding: "1rem", marginBottom: "2rem" }}>
             <h3>First of all...</h3>
             <h1>I am sorry I cannot be there</h1>
             <h3>Be present at your special day</h3>
@@ -79,13 +84,38 @@ class App extends Component {
         <FullPageWrapper
           style={{
             background: `linear-gradient(${PinkyBoy}, ${SkyBlue})`,
-            color: White
+            color: White,
+            position: "relative"
           }}
           justifyContent="center"
           alignItems="center"
         >
-          <Clouds />
-          <div style={{ textAlign: "left" }}>
+          <div
+            style={{
+              position: "absolute",
+              height: "50%",
+              pointerEvents: "none"
+            }}
+          >
+            <Clouds scale="0.6" duration="10" />
+            <Clouds scale="0.3" duration="20" />
+            <Clouds scale="0.2" duration="25" />
+            <Clouds scale="0.4" duration="15" />
+          </div>
+          <div
+            style={{
+              textAlign: "left",
+              padding: "1rem",
+              background: White,
+              color: Black,
+              border: `.25rem dashed ${NakedBrown}`,
+              boxShadow: "0 0 0px 5px white",
+              borderRadius: "1rem",
+              outline: ".25rem white",
+              zIndex: 5,
+              position: "relative"
+            }}
+          >
             <h3>I wish..</h3>
             <p>You keep living your life to the fullest</p>
             <p>You keep being a good daughter for your parents</p>
@@ -93,6 +123,19 @@ class App extends Component {
             <p>And to reach our goal, forever and always with me,</p>
             <p>Reaching towards the sky high...</p>
           </div>
+        </FullPageWrapper>
+        <FullPageWrapper
+          style={{ background: `linear-gradient(${SkyBlue}, ${White})` }}
+          justifyContent="flex-end"
+          notPadded
+        >
+          <div
+            style={{
+              width: "100%",
+              height: "10rem",
+              background: Toska
+            }}
+          />
         </FullPageWrapper>
       </div>
     );
