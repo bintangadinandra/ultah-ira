@@ -17,7 +17,8 @@ h1 {
 
 h1.giant {
   font-size: 10rem;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 1rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -133,7 +134,7 @@ a {
   left: 40%;
   width: 3rem;
   height: 4rem;
-  top: 6rem;
+  top: 220%;
   transform: translateX(-85%);
   background: #f1c27d;
   border-radius: 100%;
@@ -141,7 +142,7 @@ a {
 
 .bintang-head {
   width: 90%;
-  height: 15rem;
+  height: 54%;
   margin-bottom: -1rem;
   position: relative;
   z-index: 1;
@@ -170,8 +171,8 @@ a {
   background: #f1c27d;
   position: absolute;
   z-index: 10;
-  right: 1.8rem;
-  top: 7.5rem;
+  top: 28%;
+  right: 15%;
   transform: rotate(-15deg)
 }
 
@@ -233,7 +234,7 @@ a {
   right: 0px;
   width: 3rem;
   height: 4rem;
-  top: 6rem;
+  top: 220%;
   transform: translateX(-85%);
   background: #ffe0bd;
   border-radius: 100%;
@@ -241,7 +242,7 @@ a {
 
 .ira-head {
   width: 90%;
-  height: 15rem;
+  height: 57%;
   margin-bottom: -1rem;
   position: relative;
   z-index: 1;
@@ -270,8 +271,10 @@ a {
   background: #ffe0bd;
   position: absolute;
   z-index: 10;
-  left: 1.8rem;
-  top: 7.5rem;
+  /* left: 1.8rem;
+  top: 7.5rem; */
+  top: 28%;
+  left: 14%;
   transform: rotate(15deg)
 }
 

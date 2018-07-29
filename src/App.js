@@ -84,7 +84,7 @@ class App extends Component {
           <div class="cake-candle-light">
             <BirthdayCake />
           </div>
-          <h1>Happy..!</h1>
+          <h1 style={{ margin: "0" }}>Happy..!</h1>
           <div
             style={{
               display: "flex"
