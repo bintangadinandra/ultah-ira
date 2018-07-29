@@ -98,7 +98,8 @@ class App extends Component {
           style={{
             background: `linear-gradient(${PinkyBoy}, ${SkyBlue})`,
             color: White,
-            position: "relative"
+            position: "relative",
+            zIndex: "1"
           }}
           justifyContent="center"
           alignItems="center"
@@ -113,6 +114,9 @@ class App extends Component {
             <Clouds scale="0.6" duration="10" />
             <Clouds scale="0.3" duration="20" />
             <Clouds scale="0.2" duration="25" />
+            <Clouds scale="0.4" duration="15" />
+            <Clouds scale="0.3" duration="25" />
+            <Clouds scale="0.2" duration="35" />
             <Clouds scale="0.4" duration="15" />
           </div>
           <div
@@ -149,18 +153,16 @@ class App extends Component {
           notPadded
         >
           <div class="bintang">
+            <div class="bintang-hair" />
             <div class="bintang-head" />
-            <div class="bintang-body" />
-            <div class="bintang-right-arm" />
-            <div class="bintang-right-hand" />
-            <div class="bintang-legs" />
+            <div class="bintang-face" />
+            {/* <div class="bintang-body" /> */}
           </div>
           <div class="ira">
+            <div class="ira-hair" />
             <div class="ira-head" />
-            <div class="ira-body" />
-            <div class="ira-left-arm" />
-            <div class="ira-left-hand" />
-            <div class="ira-legs" />
+            <div class="ira-face" />
+            {/* <div class="ira-body" /> */}
           </div>
           <div
             style={{
