@@ -1,0 +1,36 @@
+.heart {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  margin: 1em auto;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+}
+
+.heart:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: tomato;
+  width: inherit;
+  height: 24px;
+  top: 12px;
+  left: 0;
+}
+
+.heart:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: tomato;
+  width: 24px;
+  top: 0;
+  left: 12px;
+  height: inherit;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}

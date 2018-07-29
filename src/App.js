@@ -14,6 +14,7 @@ import BirthdayCake from "./components/BirthdayCake";
 import Clouds from "./components/Clouds";
 import FlowerPot from "./components/FlowerPot";
 import Pencil from "./components/Pencil";
+import Heart from "./components/Heart";
 
 class App extends Component {
   render() {
@@ -147,31 +148,52 @@ class App extends Component {
         <FullPageWrapper
           style={{
             background: `linear-gradient(${SkyBlue}, ${White})`,
-            position: "relative"
+            position: "relative",
+            overflow: "hidden"
           }}
-          justifyContent="flex-end"
+          justifyContent="flex-start"
           notPadded
         >
+          <div class="last-words">
+            <p>Last but not least...</p>
+            <h3>We love each other more and more</h3>
+            <Heart />
+          </div>
           <div class="bintang">
             <div class="bintang-hair" />
             <div class="bintang-head" />
             <div class="bintang-face" />
-            {/* <div class="bintang-body" /> */}
           </div>
           <div class="ira">
             <div class="ira-hair" />
             <div class="ira-head" />
             <div class="ira-face" />
-            {/* <div class="ira-body" /> */}
+          </div>
+          <div class="person-bodies">
+            <div class="bintang-body" />
+            <div class="ira-body" />
           </div>
           <div
             style={{
               width: "100%",
               height: "10rem",
-              background: Toska
+              background: Toska,
+              position: "absolute",
+              bottom: "0px"
             }}
           />
         </FullPageWrapper>
+        <div
+          style={{
+            color: White,
+            padding: "1rem",
+            textAlign: "center"
+          }}
+        >
+          <h3>Happy Birthday Sweetheart :)</h3>
+          <p>Made by bintangadinandra with love</p>
+          <p>Only For your Special Day</p>
+        </div>
       </div>
     );
   }

@@ -82,7 +82,23 @@ a {
   height: 60%;
   text-align: center;
   bottom: 0px;
-  overflow: hidden;
+  animation: nunduk-left 5s infinite;
+  z-index: 10;
+}
+
+@keyframes nunduk-left {
+  0% {
+    transform: rotate(0)
+  }
+  30% {
+    transform: rotate(8deg)
+  }
+  70% {
+    transform: rotate(8deg)
+  }
+  0% {
+    transform: rotate(0deg)
+  }
 }
 
 .bintang-hair {
@@ -159,23 +175,32 @@ a {
   transform: rotate(-15deg)
 }
 
-.bintang-body {
-  width: 7rem;
-  height: 100%;
-  border-top-right-radius: 5rem;
-  background: #003366;
-}
-
 .ira {
   position: absolute;
   width: 50%;
   height: 57%;
   right: 0px;
   bottom: 0px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  animation: nunduk-right 5s infinite;
+  z-index: 10;
+}
+
+@keyframes nunduk-right {
+  0% {
+    transform: rotate(0)
+  }
+  30% {
+    transform: rotate(-8deg)
+  }
+  70% {
+    transform: rotate(-8deg)
+  }
+  0% {
+    transform: rotate(0deg)
+  }
 }
 
 .ira-hair {
@@ -194,11 +219,11 @@ a {
   position: absolute;
   right: -3rem;
   width: 60%;
-  top: .5rem;
   height: 20rem;
   background: #2a2a2a;
   border-radius: 100%;
   border-bottom-left-radius: 24rem;
+  border-top-right-radius: 16rem;
 }
 
 .ira-hair::after {
@@ -250,9 +275,35 @@ a {
   transform: rotate(15deg)
 }
 
+.person-bodies {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0px;
+  z-index: 5;
+  width: 100%;
+}
+
+.bintang-body {
+  width: 30%;
+  height: 15rem;
+  background: #003366;
+  border-top-right-radius: 100%;
+}
+
 .ira-body {
-  width: 7rem;
-  flex-grow: 1;
-  border-top-left-radius: 5rem;
-  background: #ffb4e2;
+  width: 35%;
+  height: 15rem;
+  background: #FFB6C1;
+  border-top-left-radius: 100%;
+}
+
+.last-words {
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 8;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
